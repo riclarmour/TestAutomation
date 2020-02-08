@@ -12,7 +12,7 @@ Feature: User should register
   Scenario: User should be registering with valid data after clearing old data
     Given I'm on registration page
     When i provide signup data
-    And i clear signup data
+    And i clear signup 
     And i provide signup data
     Then i should register
 
