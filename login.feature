@@ -16,18 +16,7 @@ Feature: User should register
     And i provide signup data
     Then i should register
 
-    # Template scenario for multiple test users
-  Scenario Outline: validate the user registration
-    Given I'm on registration page
-    When  I enter firstname "<firstname>"
-    When  I enter lastname "<lastname>"
-    Then i should register
-
-    Examples:
-    | firstname | lastname |
-    | George    | Lynn     |
-    | Peter     | Fred     |
-
+  
     # will execute only once - will call the same stepDefinition "validate the user registration"
   Scenario: validate the user registration
     Given I'm on registration page
